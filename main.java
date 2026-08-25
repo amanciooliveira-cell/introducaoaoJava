@@ -1,269 +1,254 @@
-// //exercicio 1
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite o raio da esfera: ");
-//         double raio = scanner.nextDouble();
-
-//         double volume = (4.0 / 3.0) * Math.PI * Math.pow(raio, 3);
-
-//         System.out.printf("O volume da esfera é: %.2f", volume);
-
-//         scanner.close();
-//     }
-// }
-
-//02
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite o primeiro número: ");
-//         double num1 = scanner.nextDouble();
-//         System.out.print("Digite o peso do primeiro número: ");
-//         double peso1 = scanner.nextDouble();
-
-//         System.out.print("Digite o segundo número: ");
-//         double num2 = scanner.nextDouble();
-//         System.out.print("Digite o peso do segundo número: ");
-//         double peso2 = scanner.nextDouble();
-
-//         System.out.print("Digite o terceiro número: ");
-//         double num3 = scanner.nextDouble();
-//         System.out.print("Digite o peso do terceiro número: ");
-//         double peso3 = scanner.nextDouble();
-
-//         double mediaPonderada = (num1 * peso1 + num2 * peso2 + num3 * peso3) / (peso1 + peso2 + peso3);
-
-//         System.out.printf("A média ponderada é: %.2f", mediaPonderada);
-
-//         scanner.close();
-//     }
-// }
-
-//03
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite a quantidade de homicídios: ");
-//         double homicidios = scanner.nextDouble();
-
-//         System.out.print("Digite o número total de habitantes: ");
-//         double habitantes = scanner.nextDouble();
-
-//         double taxa = (homicidios / habitantes) * 100000;
-
-//         System.out.printf("A taxa de homicídios por 100 mil habitantes é: %.2f", taxa);
-
-//         scanner.close();
-//     }
-// }
-
-//04
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite o valor do primeiro elemento: ");
-//         double primeiro = scanner.nextDouble();
-
-//         System.out.print("Digite a quantidade de termos: ");
-//         int n = scanner.nextInt();
-
-//         System.out.print("Digite o valor da razão: ");
-//         double razao = scanner.nextDouble();
-
-//         double enesimo = primeiro + (n - 1) * razao;
-
-//         System.out.printf("O %dº termo da progressão aritmética é: %.2f", n, enesimo);
-
-//         scanner.close();
-//     }
-// }
-
-//05
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.println("Horário inicial:");
-//         System.out.print("Hora: ");
-//         int horaInicio = scanner.nextInt();
-//         System.out.print("Minuto: ");
-//         int minutoInicio = scanner.nextInt();
-
-//         System.out.println("Horário final:");
-//         System.out.print("Hora: ");
-//         int horaFim = scanner.nextInt();
-//         System.out.print("Minuto: ");
-//         int minutoFim = scanner.nextInt();
-
-//         int totalMinutosInicio = horaInicio * 60 + minutoInicio;
-//         int totalMinutosFim = horaFim * 60 + minutoFim;
-
-//         int duracao;
-//         if (totalMinutosFim >= totalMinutosInicio) {
-//             duracao = totalMinutosFim - totalMinutosInicio;
-//         } else {
-//             duracao = (24 * 60 - totalMinutosInicio) + totalMinutosFim;
-//         }
-
-//         System.out.println("Duração do evento: " + duracao + " minutos");
-
-//         scanner.close();
-//     }
-// }
-
-//import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite a base do triângulo: ");
-//         double base = scanner.nextDouble();
-
-//         System.out.print("Digite a altura do triângulo: ");
-//         double altura = scanner.nextDouble();
-
-//         double area = (base * altura) / 2;
-
-//         System.out.printf("A área do triângulo retângulo é: %.2f", area);
-
-//         scanner.close();
-//     }
-// }
-
-//06
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite a temperatura em graus Celsius: ");
-//         double celsius = scanner.nextDouble();
-
-//         double fahrenheit = (celsius * 9.0 / 5.0) + 32;
-
-//         System.out.printf("%.2f °C equivale a %.2f °F", celsius, fahrenheit);
-
-//         scanner.close();
-//     }
-// }
-
-//07
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite a temperatura em graus Celsius: ");
-//         double celsius = scanner.nextDouble();
-
-//         double fahrenheit = (celsius * 9.0 / 5.0) + 32;
-
-//         System.out.printf("%.2f °C equivale a %.2f °F", celsius, fahrenheit);
-
-//         scanner.close();
-//     }
-// }
-
-//08
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite o preço original do produto: R$ ");
-//         double precoOriginal = scanner.nextDouble();
-
-//         System.out.print("Digite a porcentagem de desconto: ");
-//         double desconto = scanner.nextDouble();
-
-//         double valorDesconto = precoOriginal * (desconto / 100);
-//         double precoFinal = precoOriginal - valorDesconto;
-
-//         System.out.printf("Preço original: R$ %.2f\n", precoOriginal);
-//         System.out.printf("Desconto: R$ %.2f\n", valorDesconto);
-//         System.out.printf("Preço final: R$ %.2f", precoFinal);
-
-//         scanner.close();
-//     }
-// }
-
-//09
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite o capital a ser investido: R$ ");
-//         double capital = scanner.nextDouble();
-
-//         System.out.print("Digite a taxa de juros mensal (em %): ");
-//         double taxaPercentual = scanner.nextDouble();
-//         double taxa = taxaPercentual / 100;
-
-//         System.out.print("Digite o tempo em meses: ");
-//         int tempo = scanner.nextInt();
-
-//         // Juros Simples
-//         double montanteSimples = capital * (1 + taxa * tempo);
-
-//         // Juros Compostos
-//         double montanteComposto = capital * Math.pow(1 + taxa, tempo);
-
-//         System.out.printf("\n--- Resultados ---\n");
-//         System.out.printf("Juros Simples: R$ %.2f\n", montanteSimples);
-//         System.out.printf("Juros Compostos: R$ %.2f\n", montanteComposto);
-//         System.out.printf("Diferença: R$ %.2f\n", (montanteComposto - montanteSimples));
-
-//         scanner.close();
-//     }
-// }
-
-//10
-
-// import java.util.Scanner;
-
-// public class main {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         System.out.print("Digite um número para ver sua tabuada: ");
-//         int numero = scanner.nextInt();
-
-//         System.out.println("\nTabuada do " + numero + ":");
-//         System.out.println("------------------");
-
-//         for (int i = 1; i <= 10; i++) {
-//             System.out.printf("%d x %2d = %d\n", numero, i, numero * i);
-//         }
-
-//         scanner.close();
-//     }
-// }
+// ========== EXERCÍCIO 01 ==========
+import java.util.Scanner;
+
+public class Exercicio01 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Litros vendidos: ");
+        double litros = sc.nextDouble();
+        System.out.print("Tipo (A-álcool, G-gasolina): ");
+        char tipo = sc.next().toUpperCase().charAt(0);
+
+        double precoLitro, desconto;
+
+        if (tipo == 'A') {
+            precoLitro = 3.98;
+            if (litros <= 20) {
+                desconto = 0.03;
+            } else {
+                desconto = 0.05;
+            }
+        } else {
+            precoLitro = 6.49;
+            if (litros <= 20) {
+                desconto = 0.04;
+            } else {
+                desconto = 0.06;
+            }
+        }
+
+        double total = litros * precoLitro;
+        double valorDesconto = total * desconto;
+        double valorPago = total - valorDesconto;
+
+        System.out.printf("Valor a pagar: R$ %.2f\n", valorPago);
+        sc.close();
+    }
+}
+
+// ========== EXERCÍCIO 02 ==========
+import java.util.Scanner;
+
+public class Exercicio02 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Quantidade de morangos (Kg): ");
+        double kgMorango = sc.nextDouble();
+        System.out.print("Quantidade de maçãs (Kg): ");
+        double kgMaca = sc.nextDouble();
+
+        double precoMorango, precoMaca;
+
+        if (kgMorango <= 5) {
+            precoMorango = 2.50;
+        } else {
+            precoMorango = 2.20;
+        }
+
+        if (kgMaca <= 5) {
+            precoMaca = 1.80;
+        } else {
+            precoMaca = 1.50;
+        }
+
+        double totalMorango = kgMorango * precoMorango;
+        double totalMaca = kgMaca * precoMaca;
+        double total = totalMorango + totalMaca;
+
+        double desconto = 0;
+        if ((kgMorango + kgMaca) > 8 || total > 25.00) {
+            desconto = 0.10;
+        }
+
+        double valorFinal = total * (1 - desconto);
+
+        System.out.printf("Valor a pagar: R$ %.2f\n", valorFinal);
+        sc.close();
+    }
+}
+
+// ========== EXERCÍCIO 03 ==========
+import java.util.Scanner;
+
+public class Exercicio03 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Tipo de carne (FD-File Duplo, A-Alcatra, P-Picanha): ");
+        String tipo = sc.nextLine().toUpperCase();
+        System.out.print("Quantidade (Kg): ");
+        double quantidade = sc.nextDouble();
+        System.out.print("Pagamento (C-cartão, D-dinheiro): ");
+        char pagamento = sc.next().toUpperCase().charAt(0);
+
+        double precoKg = 0;
+        String nomeCarne = "";
+
+        if (tipo.equals("FD") || tipo.equals("FILE DUPLO")) {
+            nomeCarne = "File Duplo";
+            if (quantidade <= 5) {
+                precoKg = 4.90;
+            } else {
+                precoKg = 5.80;
+            }
+        } else if (tipo.equals("A") || tipo.equals("ALCATRA")) {
+            nomeCarne = "Alcatra";
+            if (quantidade <= 5) {
+                precoKg = 5.90;
+            } else {
+                precoKg = 6.80;
+            }
+        } else if (tipo.equals("P") || tipo.equals("PICANHA")) {
+            nomeCarne = "Picanha";
+            if (quantidade <= 5) {
+                precoKg = 6.90;
+            } else {
+                precoKg = 7.80;
+            }
+        }
+
+        double total = quantidade * precoKg;
+        double desconto = 0;
+        String tipoPagamento = (pagamento == 'C') ? "Cartão" : "Dinheiro";
+
+        if (pagamento == 'C') {
+            desconto = total * 0.05;
+        }
+
+        double valorPagar = total - desconto;
+
+        System.out.println("\n========== CUPOM FISCAL ==========");
+        System.out.printf("Tipo: %s\n", nomeCarne);
+        System.out.printf("Quantidade: %.2f Kg\n", quantidade);
+        System.out.printf("Preço total: R$ %.2f\n", total);
+        System.out.printf("Pagamento: %s\n", tipoPagamento);
+        System.out.printf("Desconto: R$ %.2f\n", desconto);
+        System.out.printf("Valor a pagar: R$ %.2f\n", valorPagar);
+        System.out.println("===================================");
+        sc.close();
+    }
+}
+
+// ========== EXERCÍCIO 04 ==========
+import java.util.Scanner;
+
+public class Exercicio04 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Número do funcionário: ");
+        int numero = sc.nextInt();
+        System.out.print("Salário atual: R$ ");
+        double salario = sc.nextDouble();
+
+        double percentual = 0;
+
+        if (salario <= 400.00) {
+            percentual = 0.15;
+        } else if (salario <= 700.00) {
+            percentual = 0.12;
+        } else if (salario <= 1000.00) {
+            percentual = 0.10;
+        } else if (salario <= 1800.00) {
+            percentual = 0.07;
+        } else if (salario <= 2500.00) {
+            percentual = 0.04;
+        } else {
+            percentual = 0.00;
+        }
+
+        double aumento = salario * percentual;
+        double novoSalario = salario + aumento;
+
+        System.out.println("\n========== DADOS DO FUNCIONÁRIO ==========");
+        System.out.printf("Número: %d\n", numero);
+        System.out.printf("Salário atual: R$ %.2f\n", salario);
+        System.out.printf("Percentual de aumento: %.0f%%\n", percentual * 100);
+        System.out.printf("Salário corrigido: R$ %.2f\n", novoSalario);
+        System.out.println("============================================");
+        sc.close();
+    }
+}
+
+// ========== EXERCÍCIO 05 ==========
+import java.util.Scanner;
+
+public class Exercicio05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Hora de início:");
+        System.out.print("Horas: ");
+        int hInicio = sc.nextInt();
+        System.out.print("Minutos: ");
+        int mInicio = sc.nextInt();
+
+        System.out.println("Hora de término:");
+        System.out.print("Horas: ");
+        int hFim = sc.nextInt();
+        System.out.print("Minutos: ");
+        int mFim = sc.nextInt();
+
+        int totalMinInicio = hInicio * 60 + mInicio;
+        int totalMinFim = hFim * 60 + mFim;
+
+        int duracaoMinutos;
+
+        if (totalMinFim > totalMinInicio) {
+            duracaoMinutos = totalMinFim - totalMinInicio;
+        } else {
+            duracaoMinutos = (24 * 60 - totalMinInicio) + totalMinFim;
+        }
+
+        if (duracaoMinutos > 24 * 60) {
+            duracaoMinutos = 24 * 60;
+        }
+
+        int horas = duracaoMinutos / 60;
+        int minutos = duracaoMinutos % 60;
+
+        System.out.printf("\nDuração do jogo: %d horas e %d minutos\n", horas, minutos);
+        sc.close();
+    }
+}
+
+// ========== EXERCÍCIO 06 ==========
+import java.util.Scanner;
+
+public class Exercicio06 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Total de cabeças: ");
+        int cabecas = sc.nextInt();
+        System.out.print("Total de patas: ");
+        int patas = sc.nextInt();
+
+        // Cada animal tem 1 cabeça
+        // Coelhos têm 4 patas, patos têm 2 patas
+        // Sistema:
+        // coelhos + patos = cabecas
+        // 4*coelhos + 2*patos = patas
+
+        int coelhos = (patas - 2 * cabecas) / 2;
+        int patos = cabecas - coelhos;
+
+        System.out.println("\n========== RESULTADO ==========");
+        System.out.printf("Patos: %d\n", patos);
+        System.out.printf("Coelhos: %d\n", coelhos);
+        System.out.println("===============================");
+        sc.close();
+    }
+}
